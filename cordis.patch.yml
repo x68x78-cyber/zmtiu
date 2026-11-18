@@ -1,0 +1,5 @@
+- insert:
+    - id: zimeiti-workbench
+      name: zimeiti-workbench
+      config:
+        root: !!js dshHomePath('zimeiti-workbench')

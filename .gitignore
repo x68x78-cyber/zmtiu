@@ -1,0 +1,7 @@
+# Build artifacts & local-only
+*.tgz
+node_modules
+.DS_Store
+
+# 发布草案（本地草稿，不进仓库；正式收录 YAML 由 PR 提交到市场仓库）
+docs/publish-draft/

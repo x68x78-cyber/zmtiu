@@ -1,0 +1,42 @@
+{
+  "name": "zimeiti-workbench",
+  "version": "0.1.0",
+  "description": "自媒体运营工作台：今日、选题、脚本、发布、复盘五个板块一站式跑通泛自媒体「选题→脚本→发布→复盘」主循环。珊瑚粉少女风，数据存本机 localStorage。",
+  "license": "MIT",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json",
+    "./cordis.patch.yml": "./cordis.patch.yml"
+  },
+  "files": [
+    "lib/index.js",
+    "lib/client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/x68x78-cyber/zmtiu.git"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "dsh-desktop-workbenches"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "scripts": {
+    "build": "node scripts/build-client.mjs"
+  }
+}
